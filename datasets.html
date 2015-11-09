@@ -61,8 +61,8 @@
         map.on("load", function () {
             // addGeoJsonLayer("./data/dc-school-zones.json");
             var query = getQueryParams(document.location.search);
-            if(query.dataset !== undefined && query.dataset !== null) {
-                addGeoJsonLayer("https://raw.githubusercontent.com/geoiq/gc_data/master/datasets/"+ query.dataset +".geojson");
+            if(query.id !== undefined && query.id !== null) {
+                addGeoJsonLayer("https://raw.githubusercontent.com/geoiq/gc_data/master/datasets/"+ query.id +".geojson");
             }
         });
 
